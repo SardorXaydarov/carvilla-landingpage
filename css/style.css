@@ -69,10 +69,17 @@ body {
     border: none;
     text-transform: capitalize;
     transition: all .3s linear;
+    border-radius: 3px;
 }
-.btnn:hover{
+
+.btnn:hover {
     background: #0102fa;
 }
+
+.container{
+    padding: 0;
+}
+
 /* header & welcome */
 .header-welcome {
     position: relative;
@@ -126,6 +133,7 @@ body {
     font-weight: 700;
     padding: 45px 0px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .header .nav-link.activee {
@@ -134,10 +142,12 @@ body {
 
 .header .nav-item:hover .nav-link {
     color: #4e4ffa;
+    cursor: pointer;
 }
 
 .header .nav-item {
     padding: 48px 21px;
+    cursor: pointer;
 }
 
 .header .nav-link {
@@ -180,6 +190,63 @@ body {
     display: inline-block;
     width: 230px;
     height: 60px;
+    margin-top: 55px;   
+    line-height: 60px;
+}
+
+
+/* search-car section styles */
+.search-boxes {
+    padding: 40px 0;
+    background: #fff;
+    box-shadow: 0 10px 40px 0px rgba(38,40,64,.2);
+    position: relative;
+    bottom: 159px;
+    display: flex;
+    align-items: center;
+    width: 100%;
     border-radius: 3px;
-    margin-top: 55px;
+    z-index: 100;
+}
+.one-box{
+    margin-left: 85px !important;
+}
+.search-box {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.select-row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.select-row label {
+    text-transform: capitalize;
+    color: #444a57;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.select-row select {
+    outline: 0 !important;
+    box-shadow: none;
+    border: 1px solid #f8f8f8;
+    background: #f8f8f8;
+    height: 60px;
+    width: 200px;
+    overflow: hidden;
+    font-size: 16px;
+    color: #888f9d;
+    text-transform: capitalize;
+    padding: 6px 12px;
+    border-radius: 3px;
+}
+.search-button .btnn{
+    width: 160px;
+    height: 60px;
+    margin-left: 63px;
 }
