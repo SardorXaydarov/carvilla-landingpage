@@ -73,7 +73,8 @@ body {
     height: 60px;
     line-height: 60px;
 }
-a.btnn{
+
+a.btnn {
     display: block;
 }
 
@@ -284,14 +285,17 @@ a.btnn{
     background: #4e4ffa;
     border: 1px solid #4e4ffa;
 }
+
 .service .service-card:hover .service-card__icon,
 .service .service-card:hover h2 a,
-.service .service-card:hover p{
+.service .service-card:hover p {
     color: #fff !important;
 }
-.service .service-card:hover p::before{
+
+.service .service-card:hover p::before {
     background: #fff;
 }
+
 .service .service-card .service-card__icon {
     display: inline-block;
     color: #50616c;
@@ -332,4 +336,98 @@ a.btnn{
     height: 3px;
     background: #3030ea;
     left: 139px;
+}
+
+
+/* car slider section */
+.car-slider {
+    background: #f8f9fb;
+    padding: 112px 0 120px;
+    margin-top: 50px;
+    position: relative;
+}
+.car-slider .title-box{
+    text-align: center;
+}
+.car-slider .title-box p {
+    color: #444a57;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.car-slider .title-box h2 {
+    position: relative;
+    font-size: 36px;
+    font-weight: 500;
+    padding-bottom: 35px;
+    color: #444a57;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+.car-slider .title-box h2::before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 2px;
+    bottom: 0;
+    background: #4e4ffa;
+    left: 73px;
+}
+
+.car-slide {
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.mySwiper {
+    margin-top: 96px;
+}
+
+.car-slide .slide-img {
+    display: block;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+}
+
+.slide-info a {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 26px;
+    display: inline-block;
+    text-decoration: none;
+    color: #444a57;
+    padding: 0;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.slide-info p {
+    width: 428px;
+    margin: 0;
+    color: #818998;
+    font-size: 16px;
+    line-height: 1.8;
+    text-transform: initial;
+}
+
+.slide-info .car-info {
+    margin-bottom: 30px;
+}
+
+.slide-info .btnn {
+    width: 176px;
+    text-align: center;
+    margin-top: 2rem;
+}
+.swiper{
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+.car-slider .swiper-pagination{
+    position: absolute;
+    bottom: 50px;
 }

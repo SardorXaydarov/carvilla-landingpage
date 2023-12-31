@@ -13,6 +13,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- poppins font -->
     <link rel="stylesheet" href="fonts/poppins/stylesheet.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- bootstrap css -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <!-- main css -->
@@ -38,19 +40,19 @@
                                     <a class="nav-link activee" href="#">home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">service</a>
+                                    <a class="nav-link" href="#service">service</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">featured cars</a>
+                                    <a class="nav-link" href="#featuredCars">featured cars</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">new cars</a>
+                                    <a class="nav-link" href="#newCars">new cars</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">brands</a>
+                                    <a class="nav-link" href="#brands">brands</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">contact</a>
+                                    <a class="nav-link" href="#contact">contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -146,7 +148,7 @@
                 </div>
             </section>
 
-            <section class="service">
+            <section class="service" id="service">
                 <div class="container">
                     <div class="service-cards">
                         <div class="service-card">
@@ -185,6 +187,84 @@
                     </div>
                 </div>
             </section>
+
+            <section class="car-slider">
+                <div class="container">
+                    <div class="title-box">
+                        <p>Checkout the Latest Cars</p>
+                        <h2>newest cars</h2>
+                    </div>
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide car-slide">
+                                <div class="col-7">
+                                    <div class="slide-img">
+                                        <img src="images/new-car-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="slide-info">
+                                        <a href="#">ferrari 488 superfast</a>
+                                        <p class="car-info">
+                                            Duis aute irure dolor in reprehenderit in voluptate <br> velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                                        </p>
+                                        <p>
+                                            Sed ut pers unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. 
+                                        </p>
+                                        <button class="btnn">
+                                            view details
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide car-slide">
+                                <div class="col-7">
+                                    <div class="slide-img">
+                                        <img src="images/new-car-2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="slide-info">
+                                        <a href="#">chevrolet camaro </a>
+                                        <p class="car-info">
+                                            Duis aute irure dolor in reprehenderit in voluptate <br> velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                                        </p>
+                                        <p>
+                                            Sed ut pers unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. 
+                                        </p>
+                                        <button class="btnn">
+                                            view details
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide car-slide">
+                                <div class="col-7">
+                                    <div class="slide-img">
+                                        <img src="images/new-car-3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="slide-info">
+                                        <a href="#">BMW series-3 wagon</a>
+                                        <p class="car-info">
+                                            Duis aute irure dolor in reprehenderit in voluptate <br> velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                                        </p>
+                                        <p>
+                                            Sed ut pers unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. 
+                                        </p>
+                                        <button class="btnn">
+                                            view details
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
         </main>
         <!-- main end -->
 
@@ -194,8 +274,18 @@
         </footer>
     </div>
 
-    <!-- bootsrap js -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            loop:Infinity,
+        });
+    </script>
 </body>
 
 </html>
