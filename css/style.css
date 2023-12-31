@@ -1,0 +1,185 @@
+/* Rufina font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rufina:wght@700&display=swap');
+
+/* Core style */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+textarea:focus,
+select:focus {
+    outline: none !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+button:focus {
+    box-shadow: none !important;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+a:active,
+a:focus {
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.btnn {
+    background: #4e4ffa;
+    color: #fff;
+    text-align: center;
+    border: none;
+    text-transform: capitalize;
+    transition: all .3s linear;
+}
+.btnn:hover{
+    background: #0102fa;
+}
+/* header & welcome */
+.header-welcome {
+    position: relative;
+    background: url('../images/welcome-banner.jpg');
+    background-position: center;
+    background-size: cover;
+    z-index: 90;
+    text-align: center;
+    color: #fff;
+    height: 932px;
+}
+
+.header-welcome::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(42, 45, 84, .60);
+    z-index: -1;
+}
+
+/* header start */
+.container {
+    max-width: 1170px !important;
+}
+
+.header .navbar .container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-nav {
+    margin: 0 !important;
+}
+
+.header .navbar {
+    padding: 0 !important;
+}
+
+#navbarSupportedContent {
+    justify-content: end;
+}
+
+.header .navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-family: 'Rufina', serif;
+    font-weight: 700;
+    padding: 45px 0px;
+    text-transform: uppercase;
+}
+
+.header .nav-link.activee {
+    color: #4e4ffa;
+}
+
+.header .nav-item:hover .nav-link {
+    color: #4e4ffa;
+}
+
+.header .nav-item {
+    padding: 48px 21px;
+}
+
+.header .nav-link {
+    padding: 0;
+    color: #f5f7fa;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all .3s linear;
+}
+
+/* welcome */
+.welcome {
+    padding-top: 176px;
+}
+
+.welcome .title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.welcome .title-box h2 {
+    font-size: 42px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.welcome .title-box p {
+    font-size: 18px;
+    text-transform: initial;
+    color: #fff;
+    font-weight: 500;
+    max-width: 735px;
+    margin: 0 auto;
+}
+
+.welcome .btnn {
+    display: inline-block;
+    width: 230px;
+    height: 60px;
+    border-radius: 3px;
+    margin-top: 55px;
+}
