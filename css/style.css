@@ -569,3 +569,49 @@ a.btnn {
     left: 50%;
     transform: translateX(-50%);
 }
+
+.clients-boxes {
+    display: flex;
+    gap: 30px !important;
+    overflow-x: hidden;
+    margin-top: 96px;
+}
+
+.client-box {
+    border: 1px solid #dadfe9;
+    padding: 50px 30px 57px;
+    gap: 25px;
+    width: 360px !important;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.client-box .client-img {
+    margin-right: 5px;
+}
+
+.client-img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.client-box .client-description p {
+    font-size: 16px;
+    color: #5e6778;
+    margin: 30px auto 25px auto;
+    width: 298px;
+    line-height: 1.8;
+}
+
+.client-box .client-name a {
+    font-size: 16px;
+    color: #5e6778;
+    font-weight: 600;
+}
+.client-box h4{
+    margin-top: 10px;
+    font-size: 16px;
+    color: #5e6778;
+    font-weight: 600;
+}
