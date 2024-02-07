@@ -215,6 +215,7 @@ a.btnn {
     font-size: 42px;
     color: #fff;
     font-weight: 700;
+    padding-bottom: 0;
     text-transform: uppercase;
 }
 
@@ -570,19 +571,38 @@ a.btnn {
     transform: translateX(-50%);
 }
 
-.clients-boxes {
+.mySwiper-second {
+    overflow: hidden;
+    position: relative;
+}
+
+.mySwiper-second .swiper-wrapper {
     display: flex;
     gap: 30px !important;
-    overflow-x: hidden;
     margin-top: 96px;
 }
 
+.mySwiper-second .client-box:hover {
+    background: #4e4ffa;
+    border: 1px solid #4e4ffa;
+    box-shadow: 0 12px 30px 0px rgba(0, 1, 193, .2);
+}
+.mySwiper-second .client-box:hover p{
+    color: #fff;
+}
+.mySwiper-second .client-box:hover h4{
+    color: #fff;
+}
+.mySwiper-second .client-box:hover h2 a{
+    color: #fff;
+}
 .client-box {
     border: 1px solid #dadfe9;
     padding: 50px 30px 57px;
     gap: 25px;
     width: 360px !important;
     box-sizing: border-box;
+    transition: all .3s linear;
     text-align: center;
 }
 
@@ -609,7 +629,8 @@ a.btnn {
     color: #5e6778;
     font-weight: 600;
 }
-.client-box h4{
+
+.client-box h4 {
     margin-top: 10px;
     font-size: 16px;
     color: #5e6778;

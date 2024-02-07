@@ -450,7 +450,6 @@
                                 </p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -461,8 +460,8 @@
                         <h2>What Our Clients Say</h2>
                     </div>
 
-                    <div class="swiper mySwiper-two">
-                        <div class="clients-boxes swiper-wrapper">
+                    <div class="swiper mySwiper-second">
+                        <div class="swiper-wrapper">
                             <div class="client-box swiper-slide">
                                 <div class="client-img">
                                     <img src="images/clients/c1.png" alt="client img 1">
@@ -561,28 +560,33 @@
                             </div>
                         </div>
                     </div>
-                </div>
+
+
+                    <!-- brands section start -->
+                    <div class="brands">
+                        
+                    </div>
+
             </section>
         </main>
         <!-- main end -->
+    </div>
 
-        <!-- footer start -->
-        <footer class="footer">
+    <!-- footer start -->
+    <footer class="footer">
 
-        </footer>
+    </footer>
     </div>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
+    <script src="js/index.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-            },
-            loop: Infinity,
-        });
+        var swiperSecond = new Swiper(".mySwiper-second", {
+            loop: true,
+        })
     </script>
 
 </body>
