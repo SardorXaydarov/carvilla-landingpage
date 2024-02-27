@@ -52,6 +52,8 @@ a:focus {
     -moz-outline-style: none;
 }
 
+
+
 .wrapper {
     overflow: hidden;
 }
@@ -275,19 +277,41 @@ a.btnn {
     font-weight: 400;
 }
 
+.select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 .select-row select {
     outline: 0 !important;
+    appearance: none;
     box-shadow: none;
     border: 1px solid #f8f8f8;
     background: #f8f8f8;
     height: 60px;
-    width: 200px;
-    overflow: hidden;
     font-size: 16px;
     color: #888f9d;
+    width: 200px;
     text-transform: capitalize;
     padding: 6px 12px;
     border-radius: 3px;
+}
+
+.select-row .select-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 12px;
+}
+
+.select-icon i {
+    font-size: 20px;
+    color: #888f9d;
+    background: #f8f8f8;
+    line-height: 60px;
 }
 
 .search-button .btnn {
@@ -554,6 +578,7 @@ a.btnn {
     font-size: 13px;
 }
 
+
 /* clients section styles */
 .clients {
     padding: 115px 0 80px;
@@ -570,69 +595,41 @@ a.btnn {
     left: 50%;
     transform: translateX(-50%);
 }
-
-.mySwiper-second {
-    overflow: hidden;
-    position: relative;
+.mySwiper-two{
+    padding: 100px 0 40px;
 }
-
-.mySwiper-second .swiper-wrapper {
+.mySwiper-two .swiper-wrapper{
     display: flex;
-    gap: 30px !important;
-    margin-top: 96px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.mySwiper-second .client-box:hover {
-    background: #4e4ffa;
-    border: 1px solid #4e4ffa;
-    box-shadow: 0 12px 30px 0px rgba(0, 1, 193, .2);
-}
-.mySwiper-second .client-box:hover p{
-    color: #fff;
-}
-.mySwiper-second .client-box:hover h4{
-    color: #fff;
-}
-.mySwiper-second .client-box:hover h2 a{
-    color: #fff;
-}
 .client-box {
+    width: 360px !important;
+    text-align: center;
+    box-sizing: border-box;
     border: 1px solid #dadfe9;
     padding: 50px 30px 57px;
-    gap: 25px;
-    width: 360px !important;
-    box-sizing: border-box;
-    transition: all .3s linear;
-    text-align: center;
 }
 
-.client-box .client-img {
-    margin-right: 5px;
-}
-
-.client-img img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-}
-
-.client-box .client-description p {
+.client-box p {
+    margin: 30px 0 25px 0;
     font-size: 16px;
-    color: #5e6778;
-    margin: 30px auto 25px auto;
-    width: 298px;
     line-height: 1.8;
+    color: #5e6778;
 }
-
-.client-box .client-name a {
+.client-box h2{
+    line-height: 1.1;
+}
+.client-box h2 a {
     font-size: 16px;
     color: #5e6778;
     font-weight: 600;
 }
 
 .client-box h4 {
-    margin-top: 10px;
     font-size: 16px;
     color: #5e6778;
     font-weight: 600;
+    margin-top: 10px;
 }
